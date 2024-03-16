@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0be3c34d87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-row" id="home">
+        <div class="header-text">
+            <p>Flutter Developer</p>
+            <h1>Hi, I'm <br><span>Utkarsh Mishra </span><br> from India</h1>
+        </div>
+        <div class="header-img">
+            <img src="images/main.jpg" alt="Header Image">
+        </div>
+    </div>
+    </div>
+   </div> 
+
+   <!-- ---------- About ----------  -->
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpg" alt="About image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="para">I am an optimistic person who sets goals and works hard to achieve them. I enjoy learning new things and improving myself. I feel fortunate to be part of a field that makes such a positive impact on the world. I am looking for an opportunity to use my skills and knowledge to contribute to an organization’s growth while also developing my own abilities.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Flutter Development</span><br>Skilled in Flutter Developement</li>
+                        <li><span>Java Language</span><br>Proficient in Java Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br>Seeking entry level opportunity !</li>
+                        <li><span>Projects</span><br>Possess strong skills in application  development <br>while learning flutter and creating projects</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BACHELOR OF TECHNOLOGY</span><br>Computer Science and Engineering, CGPA:8.2 <br> Dr A.P.J Abdul Kalam Technical University</li>
+                        <li><span>SENIOR SECONDARY EDUCATION </span><br>Central Board Of Secondary Education </li>
+                        <li><span>HIGH SCHOOL EDUCATION </span><br>Central Board Of Secondary Education</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- ---------- My Skills ---------- -->
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Flutter Development</h2>
+                <p><ul><li>Skilled in building cross-platform mobile apps using Flutter framework.</li>
+                    <li>Skilled in writing efficient and clean code with Dart.</li>
+                     <li>Strong understanding of widget-based UI development.</li>
+                    <li>Capable of designing intuitive and responsive User Interface in Flutter.</li>
+                    <li>Created multiple apps using Flutter, achieving smooth animations and responsive design.
+                    </li>
+                    </ul></p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Programming</h2>
+                <p class="java"><ul ><li>Skilled in Java development, including object-oriented programming and data structures. Effective at identifying and resolving Java-related bugs.</li> <br><li>Hands-on experience building Salary Manager application using Java AWT and Java Swings for the front-end and MySQL with JDBC connectivity for the back-end.</li></ul>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div class="other-skills">
+                <i class="fa-solid fa-gear"></i>
+                <h2>Other Skills</h2>
+                <ul><li><span>Git & Github</span></li>Skilled in Git for code versioning and collaboration.<br><br> <li><span>MySQL</span></li>Skilled in database connectivity and SQL queries using JDBC.<br><br><li><span>Familiar With</span></li>HTML ,CSS, Ms Word,Ms Powerpoint</ul>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+   </div>
+
+    <!-- ---------- Portfolio ---------- -->
+
+    <div id="portfolio">
+       <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="work-1">
+                <div class="layer">
+                    <h3>Quiz App</h3>
+                    <p>The application provides an engaging and interactive experience for users to test their knowledge on various topics.</p>
+                    <a href="#">
+                        <!-- <i class="fas fa-external-link-alt"></i> -->
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" alt="work-2">
+                <div class="layer">
+                    <h3>Expense Tracker</h3>
+                    <p>The expense tracker application allows users to register their expenses.This application helps users manage their expenses in a better way </p>
+                    <a href="#">
+                        <!-- <i class="fas fa-external-link-alt"></i> -->
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="work-3">
+                <div class="layer">
+                    <h3>Salary Manager </h3>
+                    <p>The application provides an easy to use interface for managing employee payroll information, including salary, taxes, and deductions.</p>
+                    <a href="#">
+                        <!-- <i class="fas fa-external-link-alt"></i> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">Show More</a> -->
+       </div> 
+    </div>
+
+    <!-- ---------- Contact ---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-phone"></i>9717625062</p>
+                    <p><i class="fa-solid fa-envelope"></i>utkarsh971762@gmail.com</p>
+                    <div class="social-icons">
+                        <!-- write complete profile url in href -->
+                        <a href="https://www.linkedin.com/in/utkarsh-mishra-02336520b" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/UtkarshMishra-git" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        
+                    </div>
+                    <a href="images/Utkarsh_Mishra_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Utkarsh Mishra</p>
+        </div>
+    </div>
+
+
+   <script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+          sidemeu.style.right="0";
+        }
+        
+        function closemenu(){
+          sidemeu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
