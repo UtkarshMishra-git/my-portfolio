@@ -162,6 +162,7 @@ flex-basis: 60%;
 #services{
     padding: 30px 0;
 }
+
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -193,13 +194,21 @@ flex-basis: 60%;
 .services-list div ul{
     list-style-type: square;
 }
+
 .other-skills span{
  font-size: 15px;
 }
-.java{
-    font-size: 12px;
-    line-height: 1.2;
+.read-more-btn{
+    font-size: 14px;
+    cursor: pointer;
 }
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
+}
+
 .services-list div a{
     text-decoration: none;
     color: #fff;
@@ -213,6 +222,14 @@ flex-basis: 60%;
     
 }
 
+
+/* ---------Certification------- */
+.cert img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
 /* ---------Portfolio---------- */
 #portfolio{
     padding: 50px 0;
@@ -223,11 +240,34 @@ flex-basis: 60%;
     grid-gap: 40px;
     margin-top: 50px; 
 }
+/* work  */
 .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    display: none;
+    flex:1 1 200px;
+    margin: 15px;
 }
+.work:nth-child(1){
+    display: block;
+}
+.work:nth-child(2){
+    display: block;
+}
+.work:nth-child(3){
+    display: block;
+}
+.work:nth-child(4){
+    display: block;
+}
+.work:nth-child(5){
+    display: block;
+}
+.work:nth-child(6){
+    display: block;
+}
+
 .work img{
     width: 100%;
     border-radius: 10px;
@@ -284,6 +324,7 @@ flex-basis: 60%;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
+    cursor: pointer;
 }
 .btn:hover{
     background: #1548ff;
@@ -298,11 +339,9 @@ flex-basis: 60%;
     /* Other styles here */
 }
 .contact-left{
-    flex-basis:35%;
+    flex-basis:40%;
 }
-.contact-right{
-    flex-basis:60%;
-}
+
 .contact-left p{
     margin-top: 30px;
 }
@@ -313,8 +352,8 @@ flex-basis: 60%;
 }
 .social-icons{
     margin-top: 30px;
-    padding-left: 65px;
-
+    padding-left: 40px;
+    
 }
 .social-icons a{
  text-decoration: none;
@@ -331,26 +370,14 @@ flex-basis: 60%;
     display: inline-block;
     background:#1548ff;
 }
-.contact-right form{
-    width:100%;
-    margin-top: 60px;
+
+#contact-right{
+    flex-basis:30%;
 }
-form input,form textarea{
-    width: 100%;    
-    border:0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color:#fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding:14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
+.contact-row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .copyright{
     width: 100%;
@@ -370,6 +397,9 @@ nav .fas{
 @media only screen and (max-width: 600px){
     .header-img{
         flex-basis: 0%;
+    }
+    #contact-right{
+        margin-right: 50px;
     }
     .header-text{
         flex-basis:100% ;
